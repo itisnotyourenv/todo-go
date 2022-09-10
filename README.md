@@ -1,8 +1,16 @@
 # Notes about this project
 
+### Requirements
+
 Работа с файлами конфигурации осуществляется с помощью библиотеки https://github.com/spf13/viper
 
 Работа с миграциями https://github.com/golang-migrate/migrate
+
+Работа с базой данных https://github.com/jmoiron/sqlx
+
+Работа с Postgres https://github.com/lib/pq
+
+Work with envrioment varialbes https://github.com/joho/godotenv 
 
 #### Quick install golang-migrate
 
@@ -11,8 +19,6 @@ curl -s https://packagecloud.io/install/repositories/golang-migrate/migrate/scri
 apt-get update
 apt-get install -y migrate
 ```
-
-
 
 ### Work with golang-migrate CLI
 
