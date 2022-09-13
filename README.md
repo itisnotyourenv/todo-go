@@ -12,6 +12,8 @@
 
 Work with envrioment varialbes https://github.com/joho/godotenv 
 
+Work with logs https://github.com/sirupsen/logrus
+
 #### Quick install golang-migrate
 
 ```bash
