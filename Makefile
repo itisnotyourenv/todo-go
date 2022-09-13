@@ -17,6 +17,7 @@ pg-exec:
 # example: make migrate-create NAME=third
 migrate-create:
 	migrate create -ext sql -dir schema -seq $(NAME)
+# example: make migrate-up DB_PASS=123456
 migrate-up:
 	migrate -path ./schema -database "postgresql://postgres:${DB_PASS}@localhost:5431/postgres?sslmode=disable" up
 migrate-down:

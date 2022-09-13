@@ -12,8 +12,6 @@ import (
 	"os"
 )
 
-//const Port = "8080"
-
 func main() {
 	// считываем конфиг файл
 	if err := initConfig(); err != nil {
@@ -33,7 +31,7 @@ func main() {
 		Username: viper.GetString("db.username"),
 		DBName:   viper.GetString("db.dbname"),
 		SSLMode:  viper.GetString("db.sslmode"),
-		Password: os.Getenv("DB_PASSWORD"),
+		Password: os.Getenv("DB_PASS"),
 	})
 
 	if err != nil {
