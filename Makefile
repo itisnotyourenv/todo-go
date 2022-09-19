@@ -10,6 +10,7 @@ pgs:
 pgr:
 	docker stop postgres
 	docker run --name postgres -e POSTGRES_PASSWORD=${DB_PASS} -p 5431:5432 -d --rm postgres:13.0-alpine
+	migrate -path ./schema -database "postgresql://postgres:${DB_PASS}@localhost:5431/postgres?sslmode=disable" up
 	docker logs -f postgres
 pg-exec:
 	docker exec -it postgres psql -U postgres
